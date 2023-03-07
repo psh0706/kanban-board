@@ -1,0 +1,33 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  margin-bottom: 1rem;
+}
+
+.card-container:first-child {
+  margin-top: 1rem;
+}
+
+.card-header {
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #212529;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+
+.card-content {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #212529;
+  margin-bottom: 0;
+}
