@@ -19,6 +19,7 @@
   width: 300px;
   outline: none;
   margin-left: 10px;
+  cursor: pointer;
 }
 
 .add-board-list-btn:hover {
