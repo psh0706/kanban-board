@@ -1,6 +1,6 @@
-import { BoardList } from "./common.type";
+import { BoardListProps } from "./common.type";
 
-export const TEMP_LIST_DATA: BoardList[] = [
+export const TEMP_LIST_DATA: BoardListProps[] = [
   {
     id: 1,
     title: "To Do",

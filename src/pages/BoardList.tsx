@@ -1,14 +1,6 @@
 import "../styles/BoardList.css";
-import { ListCard } from "./ListCard";
+import { BoardListProps } from "../common";
 
-export function BoardList({ title }: { title: string }) {
-  return (
-    <>
-      <div className="board-list">
-        {title}
-        <ListCard />
-        <ListCard />
-      </div>
-    </>
-  );
+export function BoardList({ id, title, entities }: BoardListProps) {
+  return <div className="board-list">{title}</div>;
 }
