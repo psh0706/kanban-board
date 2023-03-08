@@ -11,7 +11,7 @@ export function Board() {
     <>
       <div className="title">Board</div>
 
-      <div className="board-container">
+      <div className="board-list-container">
         {/* lists */}
         {TEMP_LIST_DATA.map((boardList) => (
           <BoardList key={boardList.id} {...boardList} />
