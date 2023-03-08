@@ -2,5 +2,12 @@
 export type BoardListProps = {
   id: number;
   title: string;
-  entities: [];
+  entities: Card[];
+};
+
+// 한 카드가 가지는 타입
+export type Card = {
+  id: number;
+  title: string;
+  description: string;
 };
