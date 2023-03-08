@@ -9,21 +9,3 @@
 .board-list:not(:first-child) {
   margin-left: 10px;
 }
-
-.add-board-list-btn {
-  color: #212529;
-  border-radius: 5px;
-  background-color: #fff;
-  border: 1px dashed #d9d9d9;
-  padding: 10px;
-  width: 300px;
-  outline: none;
-  margin-left: 10px;
-  cursor: pointer;
-}
-
-.add-board-list-btn:hover {
-  border: 1px dashed #bfbfbf;
-  background-color: #e6e6e6;
-  opacity: 0.9;
-}
