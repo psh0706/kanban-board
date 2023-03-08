@@ -1,4 +1,6 @@
-export const tempListData = [
+import { BoardList } from "./common.type";
+
+export const TEMP_LIST_DATA: BoardList[] = [
   {
     id: 1,
     title: "To Do",
@@ -6,7 +8,7 @@ export const tempListData = [
   },
   {
     id: 2,
-    title: "Doing",
+    title: "In Progress",
     entities: [],
   },
   {
