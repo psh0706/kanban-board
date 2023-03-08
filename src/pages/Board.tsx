@@ -1,5 +1,5 @@
 import { BoardList } from "./BoardList";
-import { TEMP_LIST_DATA } from "../common";
+import { TEMP_DATA } from "../common";
 import "../styles/Board.css";
 
 export function Board() {
@@ -13,7 +13,7 @@ export function Board() {
 
       <div className="board-list-container">
         {/* lists */}
-        {TEMP_LIST_DATA.map((boardList) => (
+        {TEMP_DATA.map((boardList) => (
           <BoardList key={boardList.id} {...boardList} />
         ))}
 

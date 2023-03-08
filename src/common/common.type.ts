@@ -2,11 +2,11 @@
 export type BoardListProps = {
   id: number;
   title: string;
-  entities: Card[];
+  entities: CardProps[];
 };
 
 // 한 카드가 가지는 타입
-export type Card = {
+export type CardProps = {
   id: number;
   title: string;
   description: string;

@@ -1,2 +1,2 @@
-export type { BoardListProps } from "./common.type";
-export { TEMP_LIST_DATA } from "./common.constants";
+export type { BoardListProps, CardProps } from "./common.type";
+export { TEMP_DATA } from "./common.constants";

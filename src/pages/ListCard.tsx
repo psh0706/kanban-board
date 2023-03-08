@@ -1,7 +1,7 @@
-import { Card } from "../common";
+import { CardProps } from "../common";
 import "../styles/ListCard.css";
 
-export function ListCard({ id, title, description }: Card) {
+export function ListCard({ id, title, description }: CardProps) {
   return (
     <div className="card-container" key={id}>
       <div className="card-header">{title}</div>
