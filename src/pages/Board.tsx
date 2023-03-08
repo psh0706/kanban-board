@@ -1,4 +1,5 @@
 import { BoardList } from "./BoardList";
+import { TEMP_LIST_DATA } from "../common";
 import "../styles/Board.css";
 
 export function Board() {
@@ -9,12 +10,14 @@ export function Board() {
   return (
     <>
       <div className="title">Board</div>
-      <div className="board-list-container">
-        {/* lists */}
-        <BoardList title={"list 1"} />
-        <BoardList title={"list 2"} />
 
-        {/* add list button */}
+      <div className="board-container">
+        {/* lists */}
+        {TEMP_LIST_DATA.map((boardList) => (
+          <BoardList key={boardList.id} {...boardList} />
+        ))}
+
+        {/* add a new list */}
         <button className="add-board-list-btn" onClick={addBoardList}>
           +
         </button>
