@@ -1,13 +1,13 @@
 // 리스트가 가지는 타입
 export type BoardListProps = {
-  id: string;
+  listId: string;
   title: string;
   entities: CardProps[];
 };
 
 // 카드가 가지는 타입
 export type CardProps = {
-  id: string;
+  cardId: string;
   title: string;
   description: string;
 };
