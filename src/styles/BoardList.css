@@ -6,6 +6,12 @@
   width: 300px;
 }
 
+.board-list-title {
+  display: block;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
 .board-list:not(:first-child) {
   margin-left: 10px;
 }
