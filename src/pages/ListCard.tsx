@@ -1,14 +1,29 @@
+import { Draggable } from "react-beautiful-dnd";
+import { CardProps } from "../common";
 import "../styles/ListCard.css";
 
-export function ListCard() {
+export function ListCard({
+  id,
+  title,
+  description,
+  index,
+}: CardProps & { index: number }) {
   return (
-    <div className="card-container">
-      <div className="card-header">Card Title</div>
-      <div className="card-body">
-        <div className="card-content">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+    <Draggable draggableId={id} index={index}>
+      {(provided) => (
+        <div
+          className="card-container"
+          key={id}
+          {...provided.draggableProps}
+          {...provided.dragHandleProps}
+          ref={provided.innerRef}
+        >
+          <div className="card-header">{title}</div>
+          <div className="card-body">
+            <div className="card-content">{description}</div>
+          </div>
         </div>
-      </div>
-    </div>
+      )}
+    </Draggable>
   );
 }
