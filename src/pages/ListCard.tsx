@@ -3,17 +3,16 @@ import { CardProps } from "../common";
 import "../styles/ListCard.css";
 
 export function ListCard({
-  id,
+  cardId,
   title,
   description,
   index,
 }: CardProps & { index: number }) {
   return (
-    <Draggable draggableId={id} index={index}>
+    <Draggable key={cardId} draggableId={cardId} index={index}>
       {(provided) => (
         <div
           className="card-container"
-          key={id}
           {...provided.draggableProps}
           {...provided.dragHandleProps}
           ref={provided.innerRef}
