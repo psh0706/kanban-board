@@ -47,6 +47,24 @@ export function Board() {
           }
         });
       }
+    } else {
+      // dropped in a different list
+      const movedCard = startColumn?.entities.find(
+        (card) => card.cardId === draggableId
+      );
+
+      if (movedCard && startColumn && finishColumn) {
+        startColumn.entities.splice(source.index, 1);
+        finishColumn.entities.splice(destination.index, 0, movedCard);
+
+        TEMP_DATA.forEach((list) => {
+          if (list.listId === startColumn.listId) {
+            list.entities = startColumn.entities;
+          } else if (list.listId === finishColumn.listId) {
+            list.entities = finishColumn.entities;
+          }
+        });
+      }
     }
   }
 
